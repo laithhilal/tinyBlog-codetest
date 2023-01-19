@@ -1,0 +1,14 @@
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(0, 107, 5);
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+
+.info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}

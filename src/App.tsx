@@ -4,6 +4,7 @@ import axios from 'axios';
 import Post from './post';
 import BlogSection from './components/Blogsection';
 import Header from './components/Header';
+import Info from './components/Info';
 
 const App: React.FC = () => {
     const [posts, setPosts] = useState<Post[]>([]);
@@ -18,6 +19,7 @@ const App: React.FC = () => {
       return (
       <div className='main-container'>
         <Header />
+        <Info />
           {selectedTags.map( (tag, i) => (
               <BlogSection key={i} tag={tag} posts={posts} />
           ))}
