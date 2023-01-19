@@ -12,7 +12,7 @@ const BlogSection: React.FC<Props> = ({ tag, posts }) => {
 
 const [isOpen, setIsOpen] = useState(false);
 
-return (
+return (   
     <section>
         <div className='h2'><h2 onClick={() => setIsOpen(!isOpen)}>{tag}</h2></div>
         <div className={`posts ${isOpen ? 'open' : ''}`}>
