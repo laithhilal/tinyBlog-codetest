@@ -15,7 +15,7 @@ const App: React.FC = () => {
     }, []);
 
       return (
-      <div>
+      <div className='main-container'>
           {selectedTags.map( (tag, i) => (
               <BlogSection key={i} tag={tag} posts={posts} />
           ))}
